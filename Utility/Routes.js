@@ -1,7 +1,7 @@
 export default {
   HOMESCREEN: "HOME",
   HOMESCREEN_TAB: "মূলপাতা",
-  //   ABOUT: "ABOUT",
+  ABOUT: "ABOUT",
   নীতিমালা: "নীতিমালা",
   সংগঠন: "সংগঠন",
   কমিটি: "কমিটি",

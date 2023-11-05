@@ -1,7 +1,22 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import React, { useLayoutEffect } from "react";
+import { Ionicons } from "@expo/vector-icons";
 
-export default function সংগঠন() {
+export default function সংগঠন({ navigation }) {
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => (
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Ionicons
+            name="ios-arrow-back"
+            size={24}
+            color="black"
+            style={{ paddingLeft: 10 }}
+          />
+        </TouchableOpacity>
+      ),
+    });
+  }, [navigation]);
   return (
     <View style={{ paddingHorizontal: 10, paddingVertical: 20 }}>
       <Text>
@@ -57,7 +72,6 @@ export default function সংগঠন() {
         <Text>● এগ্রিকালচারিস্ট অ্যাসোসিয়েশন অব বাংলাদেশ</Text>
         {"\n"}
         <Text>● শিক্ষক -কর্মচারী ঐক্যজোট</Text> {"\n"}
-        <Text>● শত নাগরিক কমিটি</Text>
       </Text>
     </View>
   );

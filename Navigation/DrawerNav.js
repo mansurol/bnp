@@ -17,11 +17,11 @@ export default function DrawerNav() {
   return (
     <Drawer.Navigator screenOptions={{ headerShown: false }}>
       <Drawer.Screen name={Routes.HOMESCREEN_TAB} component={StackNav} />
-      {/* <Drawer.Screen
+      <Drawer.Screen
         name={Routes.ABOUT}
         component={About}
         options={{ headerShown: true }}
-      /> */}
+      />
       <Drawer.Screen
         name={Routes.নীতিমালা}
         component={নীতিমালা}
