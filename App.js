@@ -4,6 +4,7 @@ import Home from "./Src/Screen/মূলপাতা";
 import { NavigationContainer } from "@react-navigation/native";
 import StackNav from "./Navigation/StackNav";
 import DrawerNav from "./Navigation/DrawerNav";
+import BottomTav from "./Navigation/BottomTav";
 
 export default function App() {
   return (
