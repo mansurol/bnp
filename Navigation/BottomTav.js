@@ -19,11 +19,11 @@ const BottomTav = () => {
         tabBarIcon: ({ color, size, focused }) => {
           let IconName;
           if (route.name === Routes.সংগঠন) {
-            IconName = focused ? "ios-home-sharp" : "ios-home-outline";
-          } else if (route.name === Routes.অঙ্গ_সংগঠন) {
             IconName = focused ? "ios-apps-sharp" : "ios-apps-outline";
+          } else if (route.name === Routes.অঙ্গ_সংগঠন) {
+            IconName = focused ? "ios-add-sharp" : "ios-add-circle-outline";
           } else if (route.name === Routes.সহযোগী) {
-            IconName = focused ? "ios-search-sharp" : "ios-search-outline";
+            IconName = focused ? "accessibility" : "accessibility";
           } else if (route.name === Routes.পেশাজীবী) {
             IconName = focused ? "ios-search-sharp" : "ios-search-outline";
           }
@@ -34,9 +34,9 @@ const BottomTav = () => {
       })}
       initialRouteName={Routes.সংগঠন}
     >
+      <Tab.Screen name={Routes.সংগঠন} component={সংগঠন} />
       <Tab.Screen name={Routes.অঙ্গ_সংগঠন} component={অঙ্গ_সংগঠন} />
       <Tab.Screen name={Routes.সহযোগী} component={সহযোগী} />
-      <Tab.Screen name={Routes.সংগঠন} component={সংগঠন} />
       <Tab.Screen name={Routes.পেশাজীবী} component={পেশাজীবী} />
     </Tab.Navigator>
   );
