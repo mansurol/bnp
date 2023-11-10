@@ -15,7 +15,7 @@ const BottomTav = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        headerShown: false,
+        headerShown: true,
         tabBarIcon: ({ color, size, focused }) => {
           let IconName;
           if (route.name === Routes.সংগঠন) {
@@ -23,7 +23,7 @@ const BottomTav = () => {
           } else if (route.name === Routes.অঙ্গ_সংগঠন) {
             IconName = focused ? "ios-add-sharp" : "ios-add-circle-outline";
           } else if (route.name === Routes.সহযোগী) {
-            IconName = focused ? "accessibility" : "accessibility";
+            IconName = focused ? "ios-add-sharp" : "ios-add-circle-outline";
           } else if (route.name === Routes.পেশাজীবী) {
             IconName = focused ? "ios-search-sharp" : "ios-search-outline";
           }

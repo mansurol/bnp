@@ -97,7 +97,7 @@ export default function DrawerNav() {
       <Drawer.Screen
         name={Routes.সংগঠন}
         component={BottomTav}
-        options={{ headerShown: true }}
+        options={{ headerShown: false }}
       ></Drawer.Screen>
       <Drawer.Screen
         name={Routes.সহায়তা}
