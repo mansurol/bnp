@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import Routes from "../../Utility/Routes";
+import শ্রমিকদল from "../Screen/শ্রমিকদল";
 export default function সহযোগী({ navigation }) {
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -26,7 +27,10 @@ export default function সহযোগী({ navigation }) {
           marginTop: 20,
         }}
       >
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.ছাত্রদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী ছাত্রদল
           </Text>
@@ -34,7 +38,10 @@ export default function সহযোগী({ navigation }) {
       </View>
 
       <View>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.শ্রমিকদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী শ্রমিকদল
           </Text>

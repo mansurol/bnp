@@ -4,6 +4,8 @@ import Home from "../Src/Screen/মূলপাতা";
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
+import ছাত্রদল from "../Src/Screen/ছাত্রদল";
+import শ্রমিকদল from "../Src/Screen/শ্রমিকদল";
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +49,9 @@ export default function StackNav() {
           headerTitle: "",
         })}
       />
+
+      <Stack.Screen name={Routes.ছাত্রদল} component={ছাত্রদল} />
+      <Stack.Screen name={Routes.শ্রমিকদল} component={শ্রমিকদল} />
     </Stack.Navigator>
   );
 }
