@@ -28,10 +28,16 @@ export default function অঙ্গ_সংগঠন({ navigation }) {
           marginTop: 20,
         }}
       >
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.যুবদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>জাতীয়তাবাদী যুবদল</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.স্বেচ্ছাসেবকদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী সেচ্ছাসেবকদল
           </Text>
@@ -39,23 +45,35 @@ export default function অঙ্গ_সংগঠন({ navigation }) {
       </View>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.মুক্তিযোদ্ধাদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী মুক্তিযোদ্ধাদল
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.কৃষকদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>জাতীয়তাবাদী কৃষকদল</Text>
         </TouchableOpacity>
       </View>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.মৎস্যজীবীদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী মৎসজীবীদল
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.তাঁতীদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী তাঁতীদল
           </Text>
@@ -63,12 +81,18 @@ export default function অঙ্গ_সংগঠন({ navigation }) {
       </View>
 
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.ওলামাদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী ওলামাদল
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.cardTwo}>
+        <TouchableOpacity
+          style={styles.cardTwo}
+          onPress={() => navigation.navigate(Routes.মহিলাদল)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>
             জাতীয়তাবাদী মহিলাদল
           </Text>
@@ -76,7 +100,10 @@ export default function অঙ্গ_সংগঠন({ navigation }) {
       </View>
 
       <View>
-        <TouchableOpacity style={styles.cardTwolast}>
+        <TouchableOpacity
+          style={styles.cardTwolast}
+          onPress={() => navigation.navigate(Routes.জাসাস)}
+        >
           <Text style={styles.CategoryGroupNameStyle}>জাসাস</Text>
         </TouchableOpacity>
       </View>
